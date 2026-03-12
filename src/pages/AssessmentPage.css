@@ -1,0 +1,596 @@
+.atlan-shell {
+  min-height: 100vh;
+  background: var(--atlan-bg);
+  color: var(--atlan-text);
+}
+
+.atlan-top-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--atlan-border);
+  background: var(--atlan-surface);
+}
+
+.atlan-top-tab {
+  appearance: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--atlan-text-secondary);
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 12px 12px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.atlan-top-tab.is-active {
+  color: var(--atlan-primary);
+  border-bottom-color: var(--atlan-primary);
+}
+
+.atlan-page-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--atlan-border);
+  background: var(--atlan-surface);
+}
+
+.atlan-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.atlan-title-wrap h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.atlan-title-wrap p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--atlan-text-muted);
+}
+
+.atlan-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.atlan-btn {
+  border: 1px solid var(--atlan-border);
+  border-radius: 10px;
+  background: var(--atlan-surface);
+  color: var(--atlan-text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 14px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.atlan-btn:hover {
+  border-color: var(--atlan-border-strong);
+  color: var(--atlan-text);
+}
+
+.atlan-btn-primary {
+  background: var(--atlan-primary);
+  border-color: var(--atlan-primary);
+  color: #ffffff;
+}
+
+.atlan-btn-primary:hover {
+  background: var(--atlan-primary-hover);
+  border-color: var(--atlan-primary-hover);
+  color: #ffffff;
+}
+
+.atlan-btn-icon {
+  width: 38px;
+  justify-content: center;
+  padding: 0;
+}
+
+.atlan-ghost-icon {
+  border: 0;
+  background: transparent;
+  color: var(--atlan-text-muted);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.atlan-ghost-icon:hover {
+  background: var(--atlan-bg-elevated);
+  color: var(--atlan-text);
+}
+
+.atlan-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--atlan-border);
+}
+
+.atlan-segmented {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--atlan-bg-elevated);
+  border: 1px solid var(--atlan-border);
+  border-radius: 9px;
+  padding: 4px;
+}
+
+.atlan-segmented-btn {
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--atlan-text-secondary);
+  font-size: 14px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.atlan-segmented-btn.is-active {
+  background: var(--atlan-surface);
+  color: var(--atlan-text);
+  box-shadow: 0 0 0 1px var(--atlan-border);
+}
+
+.atlan-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.atlan-search {
+  width: 280px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--atlan-border);
+  background: var(--atlan-surface);
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--atlan-text-muted);
+}
+
+.atlan-search input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 100%;
+  color: var(--atlan-text);
+  font-size: 14px;
+}
+
+.atlan-search input::placeholder {
+  color: var(--atlan-text-muted);
+}
+
+.atlan-select-wrap select {
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--atlan-border);
+  background: var(--atlan-surface);
+  color: var(--atlan-text-secondary);
+  padding: 0 10px;
+  font-size: 13px;
+  min-width: 122px;
+}
+
+.atlan-scope-select select {
+  min-width: 220px;
+}
+
+.atlan-status {
+  border-radius: 999px;
+  border: 1px solid var(--atlan-border);
+  background: var(--atlan-surface);
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 10px;
+}
+
+.atlan-status-live {
+  color: #18794e;
+  border-color: #9dd6b8;
+  background: #edf8f2;
+}
+
+.atlan-status-checking {
+  color: var(--atlan-text-secondary);
+}
+
+.atlan-status-fallback {
+  color: #9a6700;
+  border-color: #f1cf8b;
+  background: #fff7e6;
+}
+
+.atlan-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.1fr) minmax(290px, 0.9fr);
+  gap: 18px;
+  padding: 16px 18px 26px;
+}
+
+.atlan-list-panel {
+  min-width: 0;
+}
+
+.atlan-empty-state {
+  border: 1px dashed var(--atlan-border);
+  border-radius: 12px;
+  background: var(--atlan-surface);
+  padding: 28px;
+}
+
+.atlan-empty-state h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.atlan-empty-state p {
+  margin: 0;
+  color: var(--atlan-text-muted);
+}
+
+.bucket-card {
+  --bucket-accent: var(--atlan-primary);
+  width: 100%;
+  margin: 0 0 12px;
+  border: 1px solid var(--atlan-border);
+  border-left: 3px solid var(--bucket-accent);
+  border-radius: 10px;
+  background: var(--atlan-surface);
+  text-align: left;
+  padding: 14px 16px 12px;
+  cursor: pointer;
+}
+
+.bucket-card:hover {
+  border-color: var(--atlan-border-strong);
+}
+
+.bucket-card.is-selected {
+  box-shadow: inset 0 0 0 1px var(--bucket-accent);
+}
+
+.bucket-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.bucket-card-body h3 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: #30364a;
+}
+
+.bucket-card-body p {
+  margin: 8px 0 0;
+  color: #65708a;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.bucket-badges {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.bucket-badges span {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--atlan-border);
+  font-size: 12px;
+  color: #667593;
+  white-space: nowrap;
+  background: #fbfcff;
+}
+
+.bucket-metrics {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.bucket-metric {
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6b7690;
+}
+
+.bucket-metric span {
+  white-space: nowrap;
+}
+
+.bucket-metric-bar {
+  width: 100px;
+  height: 6px;
+  border-radius: 999px;
+  background: #e7ebf3;
+  overflow: hidden;
+}
+
+.bucket-metric-fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.tone-good {
+  color: #0d7f60;
+}
+
+.bucket-metric-fill.tone-good {
+  background: #12a37f;
+}
+
+.tone-warn {
+  color: #b87a10;
+}
+
+.bucket-metric-fill.tone-warn {
+  background: #e5a72f;
+}
+
+.tone-bad {
+  color: #cf3d3d;
+}
+
+.bucket-metric-fill.tone-bad {
+  background: #cc4a4a;
+}
+
+.bucket-metric strong {
+  font-size: 19px;
+  font-weight: 600;
+  min-width: 52px;
+  text-align: right;
+}
+
+.atlan-right-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  top: 14px;
+  align-self: start;
+}
+
+.atlan-side-card {
+  border: 1px solid var(--atlan-border);
+  border-radius: 10px;
+  background: var(--atlan-surface);
+  padding: 16px 18px;
+}
+
+.atlan-side-card h2 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.atlan-side-card h3 {
+  margin: 14px 0 10px;
+  font-size: 14px;
+  color: #30364a;
+  letter-spacing: -0.01em;
+}
+
+.atlan-side-stats {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.side-stat span {
+  display: block;
+  font-size: 12px;
+  color: #6a7692;
+}
+
+.side-stat strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #313849;
+}
+
+.side-divider {
+  height: 1px;
+  margin: 16px 0 4px;
+  background: var(--atlan-border);
+}
+
+.side-coverage {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.side-coverage-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.side-coverage-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  color: #58657f;
+}
+
+.side-coverage-head strong {
+  font-size: 14px;
+}
+
+.side-activity-time {
+  margin: 8px 0 14px;
+  color: #6a7692;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.side-activity-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--atlan-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.side-activity-link:hover {
+  color: var(--atlan-primary-hover);
+}
+
+@media (max-width: 1280px) {
+  .atlan-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .atlan-right-stack {
+    position: static;
+  }
+}
+
+@media (max-width: 1024px) {
+  .atlan-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .atlan-toolbar-right {
+    flex-wrap: wrap;
+  }
+
+  .atlan-search {
+    width: 100%;
+  }
+
+  .atlan-header-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .bucket-card-body h3 {
+    font-size: 22px;
+  }
+
+  .bucket-card-body p {
+    font-size: 14px;
+  }
+
+  .bucket-badges span {
+    font-size: 12px;
+  }
+
+  .bucket-metric strong {
+    font-size: 13px;
+  }
+
+  .atlan-side-card h2 {
+    font-size: 24px;
+  }
+
+  .atlan-side-card h3 {
+    font-size: 17px;
+  }
+
+  .side-stat span {
+    font-size: 12px;
+  }
+
+  .side-stat strong {
+    font-size: 30px;
+  }
+
+  .side-coverage-head {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .atlan-top-tabs {
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  .atlan-top-tab {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .atlan-page-header {
+    padding: 12px;
+  }
+
+  .atlan-title-wrap h1 {
+    font-size: 24px;
+  }
+
+  .atlan-main-grid {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .bucket-card {
+    padding: 12px;
+  }
+
+  .bucket-card-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bucket-badges {
+    justify-content: flex-start;
+  }
+}

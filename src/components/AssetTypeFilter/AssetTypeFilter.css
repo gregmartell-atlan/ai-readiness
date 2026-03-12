@@ -1,0 +1,58 @@
+.asset-type-filter {
+  border-top: 1px solid var(--atlan-border);
+  padding: 12px;
+  background: var(--atlan-bg-elevated);
+}
+
+.asset-type-filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.asset-type-filter-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--atlan-text);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.asset-type-filter-reset {
+  border: 1px solid var(--atlan-border);
+  background: transparent;
+  color: var(--atlan-text-secondary);
+  border-radius: var(--atlan-radius-sm);
+  padding: 2px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: border-color 0.16s ease, color 0.16s ease, background-color 0.16s ease;
+}
+
+.asset-type-filter-reset:hover {
+  color: var(--atlan-text);
+  border-color: var(--atlan-primary);
+  background: var(--atlan-primary-soft);
+}
+
+.asset-type-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.asset-type-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--atlan-text-secondary);
+}
+
+.asset-type-filter-item input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--atlan-primary);
+}

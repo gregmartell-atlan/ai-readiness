@@ -1,0 +1,87 @@
+.asset-browser {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--atlan-surface);
+  border-right: 1px solid var(--atlan-border);
+}
+
+.asset-browser-header {
+  padding: 16px 16px 14px;
+  border-bottom: 1px solid var(--atlan-border);
+}
+
+.asset-browser-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--atlan-text);
+  margin: 0 0 2px 0;
+}
+
+.asset-browser-subtitle {
+  font-size: 11px;
+  color: var(--atlan-text-muted);
+}
+
+.asset-browser-tree {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.tree-node-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 7px 12px;
+  background: transparent;
+  border: none;
+  color: var(--atlan-text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.16s ease, color 0.16s ease;
+  text-align: left;
+  font-family: inherit;
+  border-left: 2px solid transparent;
+}
+
+.tree-node-button:hover {
+  background: var(--atlan-surface-hover);
+  color: var(--atlan-text);
+}
+
+.tree-node-selected {
+  background: var(--atlan-primary-soft) !important;
+  color: var(--atlan-text) !important;
+  border-left-color: var(--atlan-primary);
+}
+
+.tree-node-chevron {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--atlan-text-muted);
+}
+
+.tree-node-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tree-node-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tree-node-children {
+  border-left: 1px solid rgba(64, 82, 115, 0.45);
+}
+
+@media (max-width: 1023px) {
+  .asset-browser {
+    border-right: none;
+  }
+}

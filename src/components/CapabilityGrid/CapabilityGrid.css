@@ -1,0 +1,140 @@
+.capability-grid-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.capability-grid-header {
+  margin: 2px 0 10px;
+}
+
+.capability-grid-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--atlan-text);
+  margin: 0 0 4px 0;
+}
+
+.capability-grid-subtitle {
+  font-size: 13px;
+  color: var(--atlan-text-muted);
+  margin: 0;
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.capability-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: var(--atlan-surface);
+  border: 1px solid var(--atlan-border);
+  border-radius: var(--atlan-radius-md);
+  cursor: pointer;
+  transition: transform 0.16s ease, border-color 0.16s ease, background-color 0.16s ease;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+}
+
+.capability-card:hover {
+  background: var(--atlan-surface-hover);
+  border-color: var(--atlan-border-strong);
+  transform: none;
+}
+
+.capability-card-selected {
+  border-width: 2px;
+  background: var(--atlan-surface-active);
+}
+
+.capability-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capability-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--atlan-radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.capability-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--atlan-text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.capability-card-score-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.capability-card-score-bar-bg {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.capability-card-score-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.capability-card-score-value {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  min-width: 44px;
+  text-align: right;
+  line-height: 1;
+}
+
+.capability-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--atlan-text-muted);
+}
+
+.capability-card-fallback-badge {
+  padding: 1px 6px;
+  background: var(--atlan-warning-soft);
+  color: var(--atlan-warning);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 1023px) {
+  .capability-grid-title {
+    font-size: 16px;
+  }
+
+  .capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+}

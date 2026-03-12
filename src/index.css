@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --atlan-primary: #3e63dd;
+  --atlan-primary-hover: #3451b2;
+  --atlan-primary-soft: #f0f4ff;
+  --atlan-bg: #f9f9fb;
+  --atlan-bg-elevated: #f2f2f5;
+  --atlan-surface: #ffffff;
+  --atlan-surface-hover: #f8faff;
+  --atlan-surface-active: #e6edfe;
+  --atlan-border: #e4e4e9;
+  --atlan-border-strong: #c6d4f9;
+  --atlan-text: #1c2024;
+  --atlan-text-secondary: #60646c;
+  --atlan-text-muted: #7e808a;
+  --atlan-success: #12a594;
+  --atlan-success-soft: #effdfb;
+  --atlan-warning: #ed8a5c;
+  --atlan-warning-soft: #fff2e9;
+  --atlan-danger: #d93d42;
+  --atlan-danger-soft: #fff0f0;
+  --atlan-info: #0880ea;
+  --atlan-info-soft: #f5faff;
+  --atlan-radius-sm: 6px;
+  --atlan-radius-md: 8px;
+  --atlan-radius-lg: 10px;
+  --atlan-shadow-md: 0 1px 3px 0 #00000014;
+  --atlan-focus-ring: 0 0 0 2px #3e63dd4d;
+  --drawer-width: 520px;
+}
+
+body {
+  margin: 0;
+  background: var(--atlan-bg);
+  color: var(--atlan-text);
+  font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--atlan-focus-ring);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f5f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfd7e4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--atlan-border-strong);
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-atlan-primary to-atlan-optimized;
+  }
+}
