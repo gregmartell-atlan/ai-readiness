@@ -7,7 +7,7 @@
 .atlan-top-tabs {
   display: flex;
   gap: 2px;
-  padding: 0 14px;
+  padding: 0 12px;
   border-bottom: 1px solid var(--atlan-border);
   background: var(--atlan-surface);
 }
@@ -18,9 +18,9 @@
   border-bottom: 2px solid transparent;
   background: transparent;
   color: var(--atlan-text-secondary);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
-  padding: 12px 12px 11px;
+  padding: 10px 10px 9px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -35,9 +35,9 @@
 .atlan-page-header {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
-  padding: 16px 18px;
+  padding: 12px 14px;
   border-bottom: 1px solid var(--atlan-border);
   background: var(--atlan-surface);
 }
@@ -51,35 +51,35 @@
 
 .atlan-title-wrap h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.05;
   letter-spacing: -0.03em;
   font-weight: 600;
 }
 
 .atlan-title-wrap p {
-  margin: 4px 0 0;
-  font-size: 13px;
+  margin: 2px 0 0;
+  font-size: 12px;
   color: var(--atlan-text-muted);
 }
 
 .atlan-header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .atlan-btn {
   border: 1px solid var(--atlan-border);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--atlan-surface);
   color: var(--atlan-text-secondary);
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  height: 38px;
-  padding: 0 14px;
-  font-size: 15px;
+  height: 34px;
+  padding: 0 12px;
+  font-size: 13px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -102,7 +102,7 @@
 }
 
 .atlan-btn-icon {
-  width: 38px;
+  width: 34px;
   justify-content: center;
   padding: 0;
 }
@@ -111,12 +111,12 @@
   border: 0;
   background: transparent;
   color: var(--atlan-text-muted);
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -129,8 +129,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  padding: 12px 18px;
+  gap: 8px;
+  padding: 10px 14px;
   border-bottom: 1px solid var(--atlan-border);
 }
 
@@ -140,8 +140,8 @@
   gap: 4px;
   background: var(--atlan-bg-elevated);
   border: 1px solid var(--atlan-border);
-  border-radius: 9px;
-  padding: 4px;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 .atlan-segmented-btn {
@@ -149,8 +149,8 @@
   border-radius: 7px;
   background: transparent;
   color: var(--atlan-text-secondary);
-  font-size: 14px;
-  padding: 6px 12px;
+  font-size: 13px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -163,20 +163,20 @@
 .atlan-toolbar-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   min-width: 0;
 }
 
 .atlan-search {
-  width: 280px;
-  height: 36px;
-  border-radius: 8px;
+  width: 260px;
+  height: 34px;
+  border-radius: 7px;
   border: 1px solid var(--atlan-border);
   background: var(--atlan-surface);
-  padding: 0 10px;
+  padding: 0 8px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--atlan-text-muted);
 }
 
@@ -186,7 +186,7 @@
   background: transparent;
   width: 100%;
   color: var(--atlan-text);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .atlan-search input::placeholder {
@@ -194,27 +194,27 @@
 }
 
 .atlan-select-wrap select {
-  height: 36px;
-  border-radius: 8px;
+  height: 34px;
+  border-radius: 7px;
   border: 1px solid var(--atlan-border);
   background: var(--atlan-surface);
   color: var(--atlan-text-secondary);
   padding: 0 10px;
-  font-size: 13px;
-  min-width: 122px;
+  font-size: 12px;
+  min-width: 112px;
 }
 
 .atlan-scope-select select {
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .atlan-status {
   border-radius: 999px;
   border: 1px solid var(--atlan-border);
   background: var(--atlan-surface);
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1;
-  padding: 7px 10px;
+  padding: 6px 8px;
 }
 
 .atlan-status-live {
@@ -236,8 +236,8 @@
 .atlan-main-grid {
   display: grid;
   grid-template-columns: minmax(0, 2.1fr) minmax(290px, 0.9fr);
-  gap: 18px;
-  padding: 16px 18px 26px;
+  gap: 14px;
+  padding: 12px 14px 18px;
 }
 
 .atlan-list-panel {
@@ -246,14 +246,14 @@
 
 .atlan-empty-state {
   border: 1px dashed var(--atlan-border);
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--atlan-surface);
-  padding: 28px;
+  padding: 22px;
 }
 
 .atlan-empty-state h2 {
   margin: 0 0 6px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .atlan-empty-state p {
@@ -264,13 +264,13 @@
 .bucket-card {
   --bucket-accent: var(--atlan-primary);
   width: 100%;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   border: 1px solid var(--atlan-border);
   border-left: 3px solid var(--bucket-accent);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--atlan-surface);
   text-align: left;
-  padding: 14px 16px 12px;
+  padding: 12px 14px 10px;
   cursor: pointer;
 }
 
@@ -286,37 +286,37 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px;
 }
 
 .bucket-card-body h3 {
   margin: 0;
-  font-size: 19px;
-  line-height: 1;
-  letter-spacing: -0.03em;
+  font-size: 17px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   font-weight: 600;
   color: #30364a;
 }
 
 .bucket-card-body p {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   color: #65708a;
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .bucket-badges {
   display: inline-flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .bucket-badges span {
-  padding: 6px 12px;
+  padding: 4px 9px;
   border-radius: 999px;
   border: 1px solid var(--atlan-border);
-  font-size: 12px;
+  font-size: 11px;
   color: #667593;
   white-space: nowrap;
   background: #fbfcff;
@@ -325,17 +325,17 @@
 .bucket-metrics {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-top: 12px;
+  gap: 14px;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 
 .bucket-metric {
-  min-width: 190px;
+  min-width: 158px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
+  gap: 6px;
+  font-size: 12px;
   color: #6b7690;
 }
 
@@ -344,8 +344,8 @@
 }
 
 .bucket-metric-bar {
-  width: 100px;
-  height: 6px;
+  width: 86px;
+  height: 5px;
   border-radius: 999px;
   background: #e7ebf3;
   overflow: hidden;
@@ -381,47 +381,47 @@
 }
 
 .bucket-metric strong {
-  font-size: 19px;
+  font-size: 13px;
   font-weight: 600;
-  min-width: 52px;
+  min-width: 44px;
   text-align: right;
 }
 
 .atlan-right-stack {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   position: sticky;
-  top: 14px;
+  top: 12px;
   align-self: start;
 }
 
 .atlan-side-card {
   border: 1px solid var(--atlan-border);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--atlan-surface);
-  padding: 16px 18px;
+  padding: 12px 14px;
 }
 
 .atlan-side-card h2 {
   margin: 0;
-  font-size: 27px;
+  font-size: 22px;
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
 
 .atlan-side-card h3 {
-  margin: 14px 0 10px;
+  margin: 10px 0 8px;
   font-size: 14px;
   color: #30364a;
   letter-spacing: -0.01em;
 }
 
 .atlan-side-stats {
-  margin-top: 12px;
+  margin-top: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 6px;
 }
 
 .side-stat span {
@@ -433,7 +433,7 @@
 .side-stat strong {
   display: block;
   margin-top: 3px;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.03em;
   color: #313849;
@@ -441,20 +441,20 @@
 
 .side-divider {
   height: 1px;
-  margin: 16px 0 4px;
+  margin: 12px 0 4px;
   background: var(--atlan-border);
 }
 
 .side-coverage {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .side-coverage-row {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .side-coverage-head {
@@ -471,9 +471,9 @@
 }
 
 .side-activity-time {
-  margin: 8px 0 14px;
+  margin: 6px 0 10px;
   color: #6a7692;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.45;
 }
 
@@ -483,7 +483,7 @@
   gap: 6px;
   color: var(--atlan-primary);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -521,11 +521,11 @@
   }
 
   .bucket-card-body h3 {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .bucket-card-body p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .bucket-badges span {
@@ -533,15 +533,15 @@
   }
 
   .bucket-metric strong {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .atlan-side-card h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .atlan-side-card h3 {
-    font-size: 17px;
+    font-size: 13px;
   }
 
   .side-stat span {
@@ -549,7 +549,7 @@
   }
 
   .side-stat strong {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .side-coverage-head {
@@ -569,20 +569,20 @@
   }
 
   .atlan-page-header {
-    padding: 12px;
+    padding: 10px;
   }
 
   .atlan-title-wrap h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .atlan-main-grid {
-    padding: 12px;
-    gap: 12px;
+    padding: 10px;
+    gap: 10px;
   }
 
   .bucket-card {
-    padding: 12px;
+    padding: 10px 12px;
   }
 
   .bucket-card-header {
