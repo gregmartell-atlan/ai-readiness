@@ -1,27 +1,24 @@
 import type { SignalId } from '../types/scoring'
 import type { SignalAvailability, ScopeSignalData } from '../types/assessment'
-import { getSignalById } from '../data/signalDefinitions'
 
 /**
  * Scope-aware signal availability detection.
  *
- * A signal is "available" within a scope when its penetration
- * exceeds the defined threshold. Signals like description and
- * ownership are always available (threshold = 0). Conditional
- * signals like DQ checks require ≥5% penetration to count.
+ * Threshold-based availability has been removed.
+ * Signals are considered available whenever the provider returns
+ * signal data for them, and scored directly from observed counts.
  */
 export function detectAvailability(
   signalId: SignalId,
   data: ScopeSignalData,
   totalAssets: number,
 ): SignalAvailability {
-  const sigDef = getSignalById(signalId)
   const sigData = data[signalId]
 
   if (!sigData) {
     return {
       signalId,
-      available: sigDef.availabilityThreshold === 0,
+      available: false,
       penetration: 0,
       assetsCovered: 0,
       totalAssets,
@@ -33,7 +30,7 @@ export function detectAvailability(
 
   return {
     signalId,
-    available: penetration >= sigDef.availabilityThreshold || sigDef.availabilityThreshold === 0,
+    available: true,
     penetration: Math.round(penetration * 1000) / 10,
     assetsCovered: sigData.passing,
     totalAssets: sigData.total,
